@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -15,5 +17,7 @@ public class Main {
         m2.setAsPaid("Alice Betsy");
         m2.listLoans();
         System.out.println("profit from m2: " + m2.calculateProfitEarned());
+
+        System.out.println(Loan.maxLoanAmount);
     }
 }
